@@ -1,0 +1,27 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<router-outlet></router-outlet>
+
+<h1>Bienvenidos a {{title}}</h1>
+<div style="text-align: center;">
+  <h4>Interpolacion</h4>
+  <app-dado valor="{{valor1}}"></app-dado>
+  <app-dado valor="{{valor2}}"></app-dado>
+  <app-dado valor="{{valor3}}"></app-dado>
+  <hr>
+  <h4>Property binding</h4>
+  <app-dado [valor]="valor1"></app-dado>
+  <app-dado [valor]="valor2"></app-dado>
+  <app-dado [valor]="valor3"></app-dado>
+
+  <hr>
+  <button (click)="tirar()">tirar</button>
+  <hr>
+  <p>resultado: {{resultado}}</p>
+</div>
